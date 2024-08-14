@@ -23,7 +23,7 @@ export class Agent {
             let lastDescription: string | null = null;
             for (let p of photos) {
                 console.log('Processing photo', p.length);
-                let description = await imageDescription(p);
+                let description = await imageDescription(p, "llava-llama3");
                 console.log('Description', description);
                 this.#photos.push({ photo: p, description });
                 lastDescription = description;

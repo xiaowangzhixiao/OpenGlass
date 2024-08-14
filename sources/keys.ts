@@ -1,5 +1,5 @@
 export const keys = {
     groq: '',
-    ollama: '',
+    ollama: 'http://localhost:11434/api/chat',
     openai: ''
 };

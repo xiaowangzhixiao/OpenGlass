@@ -31,7 +31,7 @@ function usePhotos(device: BluetoothRemoteGATTServer) {
                 } else {
                     if (id === null) {
                         console.log('Photo received', buffer);
-                        rotateImage(buffer, '270').then((rotated) => {
+                        rotateImage(buffer, '180').then((rotated) => {
                             console.log('Rotated photo', rotated);
                             setPhotos((p) => [...p, rotated]);
                         });
